@@ -25,12 +25,12 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Push to another repo
-      uses: Dan-Tel/repo1@main
+      uses: Dan-Tel/repo1
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} 
       with:
         source_file: 'test2.md'
-        destination_repo: 'Dan-Tel/repo2@main'
+        destination_repo: 'Dan-Tel/repo2'
         destination_folder: '' # optional
         user_email: 'daniyart2005@email.com'# your email
         user_name: 'dan-tel'           # your login
